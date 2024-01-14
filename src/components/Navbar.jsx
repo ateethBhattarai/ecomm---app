@@ -6,12 +6,14 @@ import SideMenu from "./SideMenu";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
-  const [user, setUser] = useState("something");
+  const [user, setUser] = useState();
 
   return (
-    <nav className="navbar">
-      <MaxWidthWrapper className="border-b mb-2 sticky z-50 py-3 flex items-center justify-around">
-        <div>LOGO</div>
+    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.97)]">
+      <MaxWidthWrapper className="border-b mb-2 py-3 flex items-center justify-around">
+        <div>
+          <Link to={"/"}>LOGO</Link>
+        </div>
         <div>
           <input
             type="text"
