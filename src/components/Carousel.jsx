@@ -3,10 +3,10 @@ import React from "react";
 const Carousel = () => {
   return (
     <div>
-      <div className="carousel w-full border-b-2 pb-2 mb-2">
+      <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            src="https://www.freewebheaders.com/wp-content/gallery/food-beverage-size-800x200/various-spices-and-herbs-website-banner_size-800x200.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -20,7 +20,7 @@ const Carousel = () => {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            src="https://www.freewebheaders.com/wp-content/gallery/food-beverage-size-800x200/italian-foods-website-banner-image_size-800x200.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -34,7 +34,7 @@ const Carousel = () => {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            src="https://www.freewebheaders.com/wp-content/gallery/food-beverage-size-800x200/green-pickled-olive-website-banner-image_size-800x200.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -48,7 +48,7 @@ const Carousel = () => {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            src="https://www.grannyspickles.com/wp-content/uploads/2022/02/product-banner.jpg"
             className="w-full"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
