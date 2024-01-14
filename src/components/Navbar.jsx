@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SideMenu from "./SideMenu";
-import { set } from "mongoose";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
