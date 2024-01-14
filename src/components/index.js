@@ -1,4 +1,5 @@
 // Self-components import
 import Navbar from "./Navbar";
+import Carousel from "./Carousel";
 
-export { Navbar };
+export { Navbar, Carousel };
