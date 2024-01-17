@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SideMenu from "./SideMenu";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
@@ -12,7 +13,9 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.97)]">
       <MaxWidthWrapper className="border-b mb-2 py-3 flex items-center justify-around">
         <div>
-          <Link to={"/"}>LOGO</Link>
+          <Link to={"/"}>
+            <img src={logo} height={"50px"} width={"50px"}></img>
+          </Link>
         </div>
         <div>
           <input

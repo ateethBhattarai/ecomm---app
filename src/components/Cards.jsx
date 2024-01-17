@@ -3,8 +3,8 @@ import React from "react";
 const Cards = ({ price, itemName, image }) => {
   return (
     <div className="card card-compact w-80 bg-base-100 shadow-xl">
-      <figure>
-        <img src={image} alt="Shoes" />
+      <figure className=" h-40">
+        <img src={image} alt="pickle" className="object-contain" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{itemName}</h2>
