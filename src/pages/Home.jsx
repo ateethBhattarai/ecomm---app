@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Carousel } from "../components";
 import Cards from "../components/Cards";
 import { cardData } from "../utils/data";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [paginateItemCount, setPaginateItemCount] = useState(5);
@@ -13,12 +14,13 @@ const Home = () => {
     <div>
       <Carousel />
       <div className="flex flex-wrap gap-5 items-center justify-evenly">
-        {cardData.slice(0, paginateItemCount).map((data, i) => (
+        {cardData.slice(0, paginateItemCount).map((data) => (
           <Cards
-            key={i}
-            price={data.price + i + 1}
+            key={data.id}
+            price={data.price}
             itemName={data.itemName}
-            image={data.img}
+            image={data.img.cover}
+            link={`/item/${data.id}`}
           />
         ))}
       </div>

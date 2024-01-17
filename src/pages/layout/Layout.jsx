@@ -6,13 +6,13 @@ import Footer from "../../components/Footer";
 
 const Layout = () => {
   return (
-    <>
+    <main className="min-h-screen flex flex-col">
       <Navbar />
-      <MaxWidthWrapper>
+      <MaxWidthWrapper className={"flex-1 py-4"}>
         <Outlet />
       </MaxWidthWrapper>
       <Footer />
-    </>
+    </main>
   );
 };
 

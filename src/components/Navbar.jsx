@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.97)]">
-      <MaxWidthWrapper className="border-b mb-2 py-3 flex items-center justify-around">
+      <MaxWidthWrapper className="border-b py-3 flex items-center justify-around">
         <div>
           <Link to={"/"}>
             <img src={logo} height={"50px"} width={"50px"}></img>

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Home, Layout, Login, SignUp } from "./pages";
+import { Home, Layout, Login, SignUp, ItemDetail } from "./pages";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/item/:id" element={<ItemDetail />} />
         </Route>
       </Routes>
     </>
