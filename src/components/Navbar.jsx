@@ -4,17 +4,18 @@ import Cart from "./Cart";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SideMenu from "./SideMenu";
 import logo from "../assets/logo.png";
+import svg from "../../public/logo.svg";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
   const [user, setUser] = useState();
 
   return (
-    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.97)]">
-      <MaxWidthWrapper className="border-b py-3 flex items-center justify-around">
+    <nav className="sticky top-0 z-50 bg-[rgba(45,39,39,0.97)]">
+      <MaxWidthWrapper className="border-b mb-2 py-3 flex items-center justify-around">
         <div>
           <Link to={"/"}>
-            <img src={logo} height={"50px"} width={"50px"}></img>
+            <img src={svg} height={"50px"} width={"50px"}></img>
           </Link>
         </div>
         <div>

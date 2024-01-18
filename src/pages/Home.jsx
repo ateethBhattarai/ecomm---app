@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Carousel } from "../components";
+import { Carousel, Category } from "../components";
 import Cards from "../components/Cards";
 import { cardData } from "../utils/data";
 import { Link } from "react-router-dom";
@@ -12,7 +12,8 @@ const Home = () => {
   };
   return (
     <div>
-      <Carousel />
+      <Carousel className="mb-20" />
+      <Category />
       <div className="flex flex-wrap gap-5 items-center justify-evenly">
         {cardData.slice(0, paginateItemCount).map((data) => (
           <Cards
@@ -26,7 +27,11 @@ const Home = () => {
       </div>
       {paginateItemCount <= cardData.length ? (
         <div className="w-full my-3 text-center">
-          <button className="btn btn-primary rounded-lg" onClick={loadMore}>
+          <button
+            className="btn rounded-lg"
+            data-theme="mytheme"
+            onClick={loadMore}
+          >
             Load More
           </button>
         </div>

@@ -24,7 +24,9 @@ const Cards = ({ price, itemName, image, link }) => {
               strokeWidth={like ? "0.5" : "2"}
             />
           </button>
-          <button className="btn ">Add to Cart</button>
+          <button className="btn " data-theme="mytheme">
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
