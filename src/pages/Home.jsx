@@ -14,9 +14,9 @@ const Home = () => {
       <Carousel className="mb-20" />
       <Category />
       <div className="flex flex-wrap gap-5 items-center justify-evenly">
-        {cardData.slice(0, paginateItemCount).map((data) => (
+        {cardData.slice(0, paginateItemCount).map((data, i) => (
           <Cards
-            key={data.id}
+            key={i}
             price={data.price}
             itemName={data.itemName}
             image={data.img.cover}

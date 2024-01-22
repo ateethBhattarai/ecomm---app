@@ -4,7 +4,7 @@ import { cardNewarrivalsData, cardPopularData } from "../utils/data";
 
 const Category = () => {
   return (
-    <div role="tablist" className="tabs tabs-bordered mb-10">
+    <div role="tablist" className="tabs whitespace-nowrap tabs-bordered mb-10">
       <input
         type="radio"
         name="my_tabs_1"
@@ -12,7 +12,7 @@ const Category = () => {
         className="tab"
         aria-label="New Arrivals"
       />
-      <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
+      <div role="tabpanel" className="tab-content bg-base-100 rounded-box p-6">
         <div className="flex flex-wrap gap-5 items-center justify-evenly">
           {cardNewarrivalsData.map((data, i) => (
             <Cards
@@ -29,11 +29,11 @@ const Category = () => {
         type="radio"
         name="my_tabs_1"
         role="tab"
-        className="tab"
+        className="tab mx-1"
         aria-label="Popular"
-        checked
+        defaultChecked
       />
-      <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
+      <div role="tabpanel" className="tab-content bg-base-100 rounded-box p-6">
         <div className="flex flex-wrap gap-5 items-center justify-evenly">
           {cardPopularData.map((data, i) => (
             <Cards
@@ -53,7 +53,7 @@ const Category = () => {
         className="tab"
         aria-label="Favorite"
       />
-      <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
+      <div role="tabpanel" className="tab-content bg-base-100 rounded-box p-6">
         <div className="flex flex-wrap gap-5 items-center justify-evenly">
           {cardNewarrivalsData.map((data, i) => (
             <Cards
