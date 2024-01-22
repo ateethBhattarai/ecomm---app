@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SideMenu from "./SideMenu";
-import logo from "../assets/logo.png";
-import svg from "../../public/logo.svg";
+import svg from "/logo.svg";
+import { useUserContext } from "../context/UserContext";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);
-  const [user, setUser] = useState();
+  const { user } = useUserContext();
 
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(45,39,39,0.97)]">
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex gap-5 max-md:hidden">
           {user ? (
             <Link to={"/"} className="btn btn-ghost rounded-xl font-medium">
-              Logout ({user})
+              Logout ({user.name})
             </Link>
           ) : (
             <>

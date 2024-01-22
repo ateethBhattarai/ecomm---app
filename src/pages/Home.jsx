@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Carousel, Category } from "../components";
 import Cards from "../components/Cards";
 import { cardData } from "../utils/data";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [paginateItemCount, setPaginateItemCount] = useState(5);

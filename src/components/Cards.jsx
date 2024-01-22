@@ -10,7 +10,7 @@ const Cards = ({ price, itemName, image, link }) => {
   return (
     <div className="card card-compact w-80 bg-base-100 shadow-xl">
       <Link to={link} className="focus:outline-none no-underline">
-        <figure className=" h-40">
+        <figure className="rounded-lg h-52">
           <img src={image} alt="pickle" className="object-contain" />
         </figure>
       </Link>

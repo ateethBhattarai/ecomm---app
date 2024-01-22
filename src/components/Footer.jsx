@@ -1,7 +1,6 @@
 import React from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import logo from "../assets/logo.png";
-import svg from "../../public/logo.svg";
+import svg from "/logo.svg";
 const Footer = () => {
   return (
     <footer className="bg-neutral text-neutral-content">

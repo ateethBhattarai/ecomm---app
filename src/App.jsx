@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, Layout, Login, SignUp, ItemDetail } from "./pages";
+import UserContextProvider from "./context/UserContext";
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -12,7 +13,7 @@ function App() {
           <Route path="/item/:id" element={<ItemDetail />} />
         </Route>
       </Routes>
-    </>
+    </UserContextProvider>
   );
 }
 
