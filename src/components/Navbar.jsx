@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useUserContext } from "../context/UserContext";
 import Cart from "./Cart";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import SideMenu from "./SideMenu";
 import svg from "/logo.svg";
-import { useUserContext } from "../context/UserContext";
 
 const Navbar = () => {
   const [cartQuantity, setCartQuantity] = useState(0);

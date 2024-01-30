@@ -1,0 +1,10 @@
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-contents {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(225, 225, 225);
+}

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { createContext } from "react";
-import { userData } from "../utils/userData";
+import { usersData } from "../utils/usersData";
 
 export const UserContext = createContext(null);
 
@@ -11,12 +11,12 @@ const UserContextProvider = ({ children }) => {
   /*
         DEV NOTE:
         To randomly select a user as the logged-in user.
-        Note: Uncomment the useEffect below to have no user selected as the logged-in user.
+        Note: Comment the useEffect below to have no user selected as the logged-in user.
     */
 
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * userData.length);
-    setUser(userData[randomIndex]);
+    const randomIndex = Math.floor(Math.random() * usersData.length);
+    setUser(usersData[randomIndex]);
   }, []);
 
   return (

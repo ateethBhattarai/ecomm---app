@@ -1,9 +1,9 @@
-import React, { useState } from "react";
 import { Heart } from "lucide-react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Cards = ({ price, itemName, image, link }) => {
-  const [like, setLike] = useState(false);
+const Cards = ({ price, itemName, image, link, isLiked }) => {
+  const [like, setLike] = useState(isLiked);
   const likeItem = () => {
     setLike(!like);
   };
@@ -21,7 +21,7 @@ const Cards = ({ price, itemName, image, link }) => {
           <button className="btn" onClick={likeItem}>
             <Heart
               fill={like ? "red" : "none"}
-              strokeWidth={like ? "0.5" : "2"}
+              strokeWidth={like ? "1" : "2"}
             />
           </button>
           <button className="btn " data-theme="mytheme">

@@ -1,0 +1,42 @@
+.sidebar {
+  height: 100vh;
+  background-color: rgb(241, 241, 241);
+  width: 15%;
+  overflow: hidden;
+}
+
+.user {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.user-icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.sidebar-list {
+  list-style-type: none;
+}
+
+.sidebar-items {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  margin-top: 1rem;
+  transition: all ease-in 0.3s;
+  padding: 0.3rem;
+}
+
+.sidebar-items:hover {
+  cursor: pointer;
+  background-color: rgb(129, 129, 129);
+  transform: scale(1.01);
+  color: rgb(233, 230, 230);
+}
+
+#sidebar-items-active {
+  margin-left: 1rem;
+}

@@ -62,7 +62,10 @@ const ItemDetail = () => {
           </>
         )}
         <div className="flex items-center justify-center gap-4 my-4">
-          <button className="btn">Add as Favourate</button>
+          <button className="btn">
+            {" "}
+            {item?.isLiked ? "Remove from Favorite" : "Add as Favorite"}
+          </button>
           <button className="btn">Add to Cart</button>
           <button className="btn">Buy Now</button>
         </div>
